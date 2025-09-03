@@ -1,0 +1,24 @@
+1. Install first: "Microsoft C++ Build Tools"
+ 
+2. STOP FIrewall and Antivirus
+
+3. Run CMD/Command prompt below FROM YOUR **app.py** folder
+ 
+Run following commands for installation:
+--> pip install streamlit==1.31.1 embedchain==0.1.86
+
+To run Application: Open CMD in the folder with app.py 
+
+These 2 commands below only work in localhost, but they don't work in html pages.
+
+--> streamlit run app.py  
+
+--> streamlit run --server.port 8502 app.py
+
+This command MUST BE RUN IN CMD from the laptop (but it also works on the webpages and in localhost and in Cpanel).
+
+--> streamlit run --server.port 5601 app.py
+
+--> streamlit run --server.port 5000 app.py
+
+KEEP IN MIND. You have to run all the time CMD for ChatBOT to work continuously to the website. If you close CMD, then your webste pages will loose the connection with API.
